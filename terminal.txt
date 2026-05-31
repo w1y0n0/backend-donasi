@@ -1,3 +1,16 @@
 > composer create-project --prefer-dist laravel/laravel:^12.0 backend-donasi
 > php artisan storage:link
 > composer dump-autoload
+
+===
+Installasi dan Konfigurasi Tailwind CSS di Laravel
+===
+1. Installasi Tailwind CSS
+   "Sejak Laravel 12 dirilis, Tailwind CSS sudah otomatis terinstall di dalam project,
+    maka kita tidak perlu melakukan Installasi secara manual lagi."
+2. Menambahkan Plugin Form
+   > npm install -D @tailwindcss/forms@0.5.10
+3. Compile Tailwind CSS dengan Vite
+   > npm run dev
+
+---
