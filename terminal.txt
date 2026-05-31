@@ -13,4 +13,21 @@ Installasi dan Konfigurasi Tailwind CSS di Laravel
 3. Compile Tailwind CSS dengan Vite
    > npm run dev
 
----
+===
+Membuat Model dan Migration
+===
+1. Category
+    > php artisan make:model Category -m
+2. Campaign
+    > php artisan make:model Campaign -m
+3. Donatur
+    > php artisan make:model Donatur -m
+4. Donation
+    > php artisan make:model Donation -m
+5. Slider
+    > php artisan make:model Slider -m
+
+Jalankan Migration
+> php artisan migrate
+
+
