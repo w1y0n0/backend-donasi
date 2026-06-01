@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 
 class Campaign extends Model
@@ -56,5 +57,17 @@ class Campaign extends Model
                 ->selectRaw('donations.campaign_id,SUM(donations.amount) as total')
                 ->where('donations.status', 'success')
                 ->groupBy('donations.campaign_id');
+    }
+
+    /**
+     * image
+     *
+     * @return Attribute
+     */
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value) => url('/storage/campaigns/' . $value),
+        );
     }
 }
