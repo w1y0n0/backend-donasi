@@ -52,3 +52,8 @@ Membuat Proses Login
 Uji Coba Proses Login
 > php artisan serve
 
+===
+Membuat Halaman Dashboard
+===
+Membuat Controller Dashboard
+> php artisan make:controller Admin/DashboardController
