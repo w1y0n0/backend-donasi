@@ -46,3 +46,9 @@ Installasi dan Konfigurasi Laravel Fortify
     > php artisan fortify:install
     > php artisan migrate
 
+===
+Membuat Proses Login
+===
+Uji Coba Proses Login
+> php artisan serve
+
