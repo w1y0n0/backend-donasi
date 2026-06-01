@@ -78,3 +78,8 @@ Membuat CRUD Campaign
 1. Membuat Controller Campaign
     > php artisan make:controller Admin/CampaignController
 
+===
+Menampilkan Data Donatur
+===
+1. Membuat Controller Donatur
+    > php artisan make:controller Admin/DonaturController
