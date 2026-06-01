@@ -71,3 +71,10 @@ Membuat CRUD Category
          yang sudah disediakan tersebut.
     Silahkan jalankan perintah berikut ini di dalam terminal/CMD :
     > php artisan vendor:publish --tag=laravel-pagination
+
+===
+Membuat CRUD Campaign
+===
+1. Membuat Controller Campaign
+    > php artisan make:controller Admin/CampaignController
+
