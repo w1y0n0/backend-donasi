@@ -31,3 +31,9 @@ Jalankan Migration
 > php artisan migrate
 
 
+===
+Membuat Data Seeder User
+===
+> php artisan make:seeder UserSeeder
+> php artisan db:seed --class=UserSeeder
+
