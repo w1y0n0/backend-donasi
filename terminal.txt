@@ -37,3 +37,12 @@ Membuat Data Seeder User
 > php artisan make:seeder UserSeeder
 > php artisan db:seed --class=UserSeeder
 
+===
+Installasi dan Konfigurasi Laravel Fortify
+===
+1. Installasi
+    > composer require laravel/fortify:1.25.4
+2. Publish Konfigurasi
+    > php artisan fortify:install
+    > php artisan migrate
+
