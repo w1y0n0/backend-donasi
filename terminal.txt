@@ -57,3 +57,17 @@ Membuat Halaman Dashboard
 ===
 Membuat Controller Dashboard
 > php artisan make:controller Admin/DashboardController
+
+===
+Membuat CRUD Category
+===
+1. Membuat Controller Category
+    > php artisan make:controller Admin/CategoryController
+2. Melihat route list
+    > php artisan route:list
+3. Membuat view/halaman index Category
+    catatan: Untuk menampilkan data perhalaman, menggunakan pagination, di dalam Laravel sudah disediakan template untuk pagination,
+         baik itu Bootstrap, Semantic UI, Tailwind CSS dan lain-lain. Oleh karena itu, kita cukup melakukan publish view/template
+         yang sudah disediakan tersebut.
+    Silahkan jalankan perintah berikut ini di dalam terminal/CMD :
+    > php artisan vendor:publish --tag=laravel-pagination
