@@ -99,3 +99,11 @@ Profile User dan Two Factor Authentication
     > php artisan make:controller Admin/ProfileController
 2. Membuat Route Profile
     > php artisan route:list
+
+===
+Membuat CRUD Slider
+===
+1. Membuat Controller Slider
+    > php artisan make:controller Admin/SliderController
+2. Membuat Route Slider
+    > php artisan route:list
