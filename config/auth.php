@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'donaturs',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -65,10 +71,10 @@ return [
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'donaturs' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\Donatur::class),
+        ],
     ],
 
     /*

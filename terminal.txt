@@ -107,3 +107,21 @@ Membuat CRUD Slider
     > php artisan make:controller Admin/SliderController
 2. Membuat Route Slider
     > php artisan route:list
+
+===
+Install dan Konfigurasi Laravel Passport
+===
+1. Installasi Laravel Passport
+    > php artisan install:api --passport
+2. Publish Config dan Migration
+    > php artisan vendor:publish --tag=passport-config
+    > php artisan vendor:publish --tag=passport-migrations
+    > php artisan migrate
+3. Override Routes Dan Load Keys
+    > php artisan passport:keys
+    > php artisan passport:client --personal --provider=donaturs
+    
+        What should we name the client? [Laravel]
+        ❯ Donatur Personal Access Client
+
+          INFO  New client created successfully. 
