@@ -91,3 +91,11 @@ Menampilkan Data Donasi
     > php artisan make:controller Admin/DonationController
 2. Membuat Route Index dan Filter Donation
     > php artisan route:list
+
+===
+Profile User dan Two Factor Authentication
+===
+1. Membuat Controller Profile
+    > php artisan make:controller Admin/ProfileController
+2. Membuat Route Profile
+    > php artisan route:list
