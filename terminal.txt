@@ -149,3 +149,9 @@ Membuat Restful API Campaign
 ===
 1. Membuat Controller API Campaign
     > php artisan make:controller Api/CampaignController
+
+===
+Membuat Restful API Slider
+===
+1. Membuat Controller API Slider
+    > php artisan make:controller Api/SliderController

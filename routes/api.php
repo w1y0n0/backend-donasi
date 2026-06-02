@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\CampaignController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\RegisterController;
+use App\Http\Controllers\Api\SliderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +34,8 @@ Route::get('/categoryHome', [CategoryController::class, 'categoryHome']);
  */
 Route::get('/campaign', [CampaignController::class, 'index']);
 Route::get('/campaign/{slug}', [CampaignController::class, 'show']);
+
+/**
+ * Api Slider
+ */
+Route::get('/slider', [SliderController::class, 'index']);
