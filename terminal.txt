@@ -83,3 +83,11 @@ Menampilkan Data Donatur
 ===
 1. Membuat Controller Donatur
     > php artisan make:controller Admin/DonaturController
+
+===
+Menampilkan Data Donasi
+===
+1. Membuat Controller Donation
+    > php artisan make:controller Admin/DonationController
+2. Membuat Route Index dan Filter Donation
+    > php artisan route:list
