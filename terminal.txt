@@ -143,3 +143,9 @@ Membuat Restful API Category
 ===
 1. Membuat Controller API Category
     > php artisan make:controller Api/CategoryController
+
+===
+Membuat Restful API Campaign
+===
+1. Membuat Controller API Campaign
+    > php artisan make:controller Api/CampaignController
