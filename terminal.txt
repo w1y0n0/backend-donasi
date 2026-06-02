@@ -161,3 +161,16 @@ Membuat Restful API Profile
 ===
 1. Membuat Controller API Profile
     > php artisan make:controller Api/ProfileController
+
+===
+Installasi dan Konfigurasi Midtrans
+===
+1. Installasi Package Midtrans
+    > composer require midtrans/midtrans-php
+
+    Repo Midtrans: https://github.com/Midtrans/midtrans-php
+
+2. Konfigurasi Package Midtrans
+    buka file .env :
+    MIDTRANS_CLIENTKEY=paste_client_key_midtrans_disini
+    MIDTRANS_SERVERKEY=paste_server_key_midtrans_disini
