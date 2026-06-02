@@ -155,3 +155,9 @@ Membuat Restful API Slider
 ===
 1. Membuat Controller API Slider
     > php artisan make:controller Api/SliderController
+
+===
+Membuat Restful API Profile
+===
+1. Membuat Controller API Profile
+    > php artisan make:controller Api/ProfileController
