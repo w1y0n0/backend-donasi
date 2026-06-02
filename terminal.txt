@@ -120,8 +120,14 @@ Install dan Konfigurasi Laravel Passport
 3. Override Routes Dan Load Keys
     > php artisan passport:keys
     > php artisan passport:client --personal --provider=donaturs
-    
+
         What should we name the client? [Laravel]
         ❯ Donatur Personal Access Client
 
           INFO  New client created successfully. 
+
+===
+Membuat Restful API Register
+===
+1. Membuat Controller API Register
+    > php artisan make:controller Api/RegisterController

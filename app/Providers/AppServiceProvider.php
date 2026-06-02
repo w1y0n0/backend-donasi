@@ -20,6 +20,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Passport::$keyPath = storage_path('oauth');
+        Passport::$keyPath = storage_path();
     }
 }
