@@ -131,3 +131,9 @@ Membuat Restful API Register
 ===
 1. Membuat Controller API Register
     > php artisan make:controller Api/RegisterController
+
+===
+Membuat Restful API Login
+===
+1. Membuat Controller API Login
+    > php artisan make:controller Api/LoginController

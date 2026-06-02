@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -12,3 +13,9 @@ Route::get('/user', function (Request $request) {
  * Api Register
  */
 Route::post('/register', [RegisterController::class, 'register']);
+
+/**
+ * Api Login
+ */
+Route::post('/login', [LoginController::class, 'login']);
+
