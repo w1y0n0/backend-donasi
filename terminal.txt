@@ -137,3 +137,9 @@ Membuat Restful API Login
 ===
 1. Membuat Controller API Login
     > php artisan make:controller Api/LoginController
+
+===
+Membuat Restful API Category
+===
+1. Membuat Controller API Category
+    > php artisan make:controller Api/CategoryController
