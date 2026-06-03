@@ -1,0 +1,443 @@
+{
+  "info": {
+    "_postman_id": "4fbd93a5-6399-42ea-8315-9d72f816feec",
+    "name": "BACKEND DONASI - LARAVEL 12",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53774221",
+    "_collection_link": "https://go.postman.co/collection/53774221-4fbd93a5-6399-42ea-8315-9d72f816feec?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Kurnia Andi Nugroho",
+                  "type": "text",
+                  "id": 0
+                },
+                {
+                  "key": "email",
+                  "value": "kurnia@gmail.com",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "text",
+                  "id": 2
+                },
+                {
+                  "key": "password_confirmation",
+                  "value": "password",
+                  "type": "text",
+                  "id": 3
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Kurnia Andi Nugroho",
+                  "type": "text",
+                  "id": 0,
+                  "disabled": true
+                },
+                {
+                  "key": "email",
+                  "value": "kurnia@gmail.com",
+                  "type": "text",
+                  "id": 1
+                },
+                {
+                  "key": "password",
+                  "value": "password",
+                  "type": "text",
+                  "id": 2
+                },
+                {
+                  "key": "password_confirmation",
+                  "value": "password",
+                  "type": "text",
+                  "id": 3,
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Categories Index",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/category",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Category Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/category/kemanusiaan",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "category",
+                "kemanusiaan"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Home",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/categoryHome",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "categoryHome"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Campaigns",
+      "item": [
+        {
+          "name": "Campaigns Index",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/campaign",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "campaign"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Campaign Show",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/campaign/banjir-99-rt-terendam-banjir-hingga-15-m",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "campaign",
+                "banjir-99-rt-terendam-banjir-hingga-15-m"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Sliders",
+      "item": [
+        {
+          "name": "Sliders Index",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/slider",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "slider"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "item": [
+        {
+          "name": "Profile Index",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTllODY5MS01NTdjLTcyODctODVjMC1iMDYwNWI5YWM2NzciLCJqdGkiOiJmMDUyNmNmYmZmNDAwYzc5MzJhZmU4OTY1ZWM5N2NmNzFkNjJjOTdkOWQxMWQ0MzY3M2I4NDk5NTc3MWRjZWY0ODBhYTUyYjQwYjBlYmQxNiIsImlhdCI6MTc4MDM4NTU3OS41MzEwMzUsIm5iZiI6MTc4MDM4NTU3OS41MzEwMzcsImV4cCI6MTgxMTkyMTU3OS40OTQzMDYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.dlCp5MbNWD7BjYs_Bvzz8ysgQCFQvanOBMaRejhysLIq5O1iVduOb-DYsKoKMRvwT6aHXZENVtMzdXx6cAsP-MBLz4IaAtiGXuDxHvDPl-4FZ7oqe2FcW6rpvZxwY9vjr21M7NoD1Ccy-CvNI6kxlmykUnicKk3NTHdJpVThiAoSgc1lrIK3mGrqRgV7PFSJYDxM-rJ7UoVPIFgdwYSa2yUe5lF0ZjcI53Lk1lGrFwMPJ2rdDk-9gyW-Vc2giCDTMn6EnBenKy6qjbDihUNNVeumjNxq1QBhEE9iSKhH2xXutETT9M359WR8FNZPfaEuaJgj_odIdjfc4tGx9O6MoRFQvtE4gUobm6u_L0FZ6TbXMriY3WAIqzg7cUK4gO8AwZn54jflg5o3te6miLxxTQPXD5R6-zDfWQVkVn0gJYd_FwUo2tWPa4a234AiORB92gmNvkASdkQD4_4jF_1wyCNGHrnxvXbuCLYr1Fbm_jTRLd8F9IVm3i2QoafiG6TtEhdL5lklTXzJIo8TFI6D09P_b24VGqRJNRbO2rzpfzPGMV1NbhgGI-Wwjo4L_V1uidv0KcI3EVPfXfkR8b7azUCiXd11HjdJncYIZGELdliYO_ji4S04YmcKHXqz6OcRsFBEebawItMxFI5kIV5ot5h8QOQF1jYX3bIH713eNrI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Update",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTllODY5MS01NTdjLTcyODctODVjMC1iMDYwNWI5YWM2NzciLCJqdGkiOiJmMDUyNmNmYmZmNDAwYzc5MzJhZmU4OTY1ZWM5N2NmNzFkNjJjOTdkOWQxMWQ0MzY3M2I4NDk5NTc3MWRjZWY0ODBhYTUyYjQwYjBlYmQxNiIsImlhdCI6MTc4MDM4NTU3OS41MzEwMzUsIm5iZiI6MTc4MDM4NTU3OS41MzEwMzcsImV4cCI6MTgxMTkyMTU3OS40OTQzMDYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.dlCp5MbNWD7BjYs_Bvzz8ysgQCFQvanOBMaRejhysLIq5O1iVduOb-DYsKoKMRvwT6aHXZENVtMzdXx6cAsP-MBLz4IaAtiGXuDxHvDPl-4FZ7oqe2FcW6rpvZxwY9vjr21M7NoD1Ccy-CvNI6kxlmykUnicKk3NTHdJpVThiAoSgc1lrIK3mGrqRgV7PFSJYDxM-rJ7UoVPIFgdwYSa2yUe5lF0ZjcI53Lk1lGrFwMPJ2rdDk-9gyW-Vc2giCDTMn6EnBenKy6qjbDihUNNVeumjNxq1QBhEE9iSKhH2xXutETT9M359WR8FNZPfaEuaJgj_odIdjfc4tGx9O6MoRFQvtE4gUobm6u_L0FZ6TbXMriY3WAIqzg7cUK4gO8AwZn54jflg5o3te6miLxxTQPXD5R6-zDfWQVkVn0gJYd_FwUo2tWPa4a234AiORB92gmNvkASdkQD4_4jF_1wyCNGHrnxvXbuCLYr1Fbm_jTRLd8F9IVm3i2QoafiG6TtEhdL5lklTXzJIo8TFI6D09P_b24VGqRJNRbO2rzpfzPGMV1NbhgGI-Wwjo4L_V1uidv0KcI3EVPfXfkR8b7azUCiXd11HjdJncYIZGELdliYO_ji4S04YmcKHXqz6OcRsFBEebawItMxFI5kIV5ot5h8QOQF1jYX3bIH713eNrI",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Kurnia Andi Nugroho",
+                  "type": "text",
+                  "uuid": "0a5c976d-00a1-4e48-9d0b-49d92c014ec8"
+                },
+                {
+                  "key": "avatar",
+                  "description": "Pilih Foto dari Komputer",
+                  "type": "file",
+                  "uuid": "75917df8-12d4-45a4-b58e-b06d509d9233",
+                  "src": "/C:/Users/User/Pictures/Logo-PNC.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/profile",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profile Update Password",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTllODY5MS01NTdjLTcyODctODVjMC1iMDYwNWI5YWM2NzciLCJqdGkiOiJmMDUyNmNmYmZmNDAwYzc5MzJhZmU4OTY1ZWM5N2NmNzFkNjJjOTdkOWQxMWQ0MzY3M2I4NDk5NTc3MWRjZWY0ODBhYTUyYjQwYjBlYmQxNiIsImlhdCI6MTc4MDM4NTU3OS41MzEwMzUsIm5iZiI6MTc4MDM4NTU3OS41MzEwMzcsImV4cCI6MTgxMTkyMTU3OS40OTQzMDYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.dlCp5MbNWD7BjYs_Bvzz8ysgQCFQvanOBMaRejhysLIq5O1iVduOb-DYsKoKMRvwT6aHXZENVtMzdXx6cAsP-MBLz4IaAtiGXuDxHvDPl-4FZ7oqe2FcW6rpvZxwY9vjr21M7NoD1Ccy-CvNI6kxlmykUnicKk3NTHdJpVThiAoSgc1lrIK3mGrqRgV7PFSJYDxM-rJ7UoVPIFgdwYSa2yUe5lF0ZjcI53Lk1lGrFwMPJ2rdDk-9gyW-Vc2giCDTMn6EnBenKy6qjbDihUNNVeumjNxq1QBhEE9iSKhH2xXutETT9M359WR8FNZPfaEuaJgj_odIdjfc4tGx9O6MoRFQvtE4gUobm6u_L0FZ6TbXMriY3WAIqzg7cUK4gO8AwZn54jflg5o3te6miLxxTQPXD5R6-zDfWQVkVn0gJYd_FwUo2tWPa4a234AiORB92gmNvkASdkQD4_4jF_1wyCNGHrnxvXbuCLYr1Fbm_jTRLd8F9IVm3i2QoafiG6TtEhdL5lklTXzJIo8TFI6D09P_b24VGqRJNRbO2rzpfzPGMV1NbhgGI-Wwjo4L_V1uidv0KcI3EVPfXfkR8b7azUCiXd11HjdJncYIZGELdliYO_ji4S04YmcKHXqz6OcRsFBEebawItMxFI5kIV5ot5h8QOQF1jYX3bIH713eNrI",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "type": "text",
+                  "uuid": "0a5c976d-00a1-4e48-9d0b-49d92c014ec8"
+                },
+                {
+                  "key": "password_confirmation",
+                  "type": "text",
+                  "uuid": "75917df8-12d4-45a4-b58e-b06d509d9233",
+                  "value": "12345678"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/profile/password",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "profile",
+                "password"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Donations",
+      "item": [
+        {
+          "name": "Donations Index",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTllODY5MS01NTdjLTcyODctODVjMC1iMDYwNWI5YWM2NzciLCJqdGkiOiJmMDUyNmNmYmZmNDAwYzc5MzJhZmU4OTY1ZWM5N2NmNzFkNjJjOTdkOWQxMWQ0MzY3M2I4NDk5NTc3MWRjZWY0ODBhYTUyYjQwYjBlYmQxNiIsImlhdCI6MTc4MDM4NTU3OS41MzEwMzUsIm5iZiI6MTc4MDM4NTU3OS41MzEwMzcsImV4cCI6MTgxMTkyMTU3OS40OTQzMDYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.dlCp5MbNWD7BjYs_Bvzz8ysgQCFQvanOBMaRejhysLIq5O1iVduOb-DYsKoKMRvwT6aHXZENVtMzdXx6cAsP-MBLz4IaAtiGXuDxHvDPl-4FZ7oqe2FcW6rpvZxwY9vjr21M7NoD1Ccy-CvNI6kxlmykUnicKk3NTHdJpVThiAoSgc1lrIK3mGrqRgV7PFSJYDxM-rJ7UoVPIFgdwYSa2yUe5lF0ZjcI53Lk1lGrFwMPJ2rdDk-9gyW-Vc2giCDTMn6EnBenKy6qjbDihUNNVeumjNxq1QBhEE9iSKhH2xXutETT9M359WR8FNZPfaEuaJgj_odIdjfc4tGx9O6MoRFQvtE4gUobm6u_L0FZ6TbXMriY3WAIqzg7cUK4gO8AwZn54jflg5o3te6miLxxTQPXD5R6-zDfWQVkVn0gJYd_FwUo2tWPa4a234AiORB92gmNvkASdkQD4_4jF_1wyCNGHrnxvXbuCLYr1Fbm_jTRLd8F9IVm3i2QoafiG6TtEhdL5lklTXzJIo8TFI6D09P_b24VGqRJNRbO2rzpfzPGMV1NbhgGI-Wwjo4L_V1uidv0KcI3EVPfXfkR8b7azUCiXd11HjdJncYIZGELdliYO_ji4S04YmcKHXqz6OcRsFBEebawItMxFI5kIV5ot5h8QOQF1jYX3bIH713eNrI",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/donation",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "donation"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
