@@ -174,3 +174,9 @@ Installasi dan Konfigurasi Midtrans
     buka file .env :
     MIDTRANS_CLIENTKEY=paste_client_key_midtrans_disini
     MIDTRANS_SERVERKEY=paste_server_key_midtrans_disini
+
+===
+Membuat Restful API Donation
+===
+1. Membuat Controller API Donation
+    > php artisan make:controller Api/DonationController
