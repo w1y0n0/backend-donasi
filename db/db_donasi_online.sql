@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 03, 2026 at 02:06 AM
+-- Generation Time: Jun 04, 2026 at 05:40 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.28
 
@@ -32,6 +32,19 @@ CREATE TABLE `cache` (
   `value` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `expiration` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cache`
+--
+
+INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('laravel_cache_58a529729abdfedf1f6a0f17c1ebdaf4', 'i:1;', 1780544141),
+('laravel_cache_58a529729abdfedf1f6a0f17c1ebdaf4:timer', 'i:1780544141;', 1780544141),
+('laravel_cache_admin@gmail.com|127.0.0.1', 'i:1;', 1780544091),
+('laravel_cache_admin@gmail.com|127.0.0.1:timer', 'i:1780544091;', 1780544091),
+('laravel_cache_c525a5357e97fef8d3db25841c86da1a', 'i:2;', 1780544091),
+('laravel_cache_c525a5357e97fef8d3db25841c86da1a:timer', 'i:1780544091;', 1780544091),
+('laravel_cache_fortify.2fa_codes.040630aa0f705e71966374cea806bf2d', 'i:59351469;', 1780544141);
 
 -- --------------------------------------------------------
 
@@ -71,7 +84,8 @@ CREATE TABLE `campaigns` (
 
 INSERT INTO `campaigns` (`id`, `title`, `slug`, `category_id`, `target_donation`, `max_date`, `description`, `image`, `user_id`, `created_at`, `updated_at`) VALUES
 (1, 'BANJIR! 99 RT Terendam Banjir Hingga 1.5 M', 'banjir-99-rt-terendam-banjir-hingga-15-m', 1, 50000000, '2026-06-30', '<p>Tercatat ada <strong>26 titik yang mengalami banjir,</strong> bahkan di wilayah Cipinang Melayu, warga di 6 RT mengungsi sementara akibat rumah terendam banjir.</p>', 'mCJ2pJEzzZ1p7Jce2qfTIgYmbX4NLoCN8ONWBwOY.png', 1, '2026-06-01 18:18:51', '2026-06-01 18:22:53'),
-(2, 'Pahala Tak Terputus! Bangun Masjid Terkena Gempa', 'pahala-tak-terputus-bangun-masjid-terkena-gempa', 2, 1000000000, '2026-08-10', '<p>Sebagaimana kehilangan rumah, Sulawesi Barat menyimpan luka mendalam ketika masjid-masjid mereka hancur akibat gempa.</p>', 'cIQjG2k7UKCkJxk2NiHmJ0XSV3c2DVHHZja83GdW.png', 1, '2026-06-01 23:57:02', '2026-06-01 23:57:25');
+(2, 'Pahala Tak Terputus! Bangun Masjid Terkena Gempa', 'pahala-tak-terputus-bangun-masjid-terkena-gempa', 2, 1000000000, '2026-08-10', '<p>Sebagaimana kehilangan rumah, Sulawesi Barat menyimpan luka mendalam ketika masjid-masjid mereka hancur akibat gempa.</p>', 'cIQjG2k7UKCkJxk2NiHmJ0XSV3c2DVHHZja83GdW.png', 1, '2026-06-01 23:57:02', '2026-06-01 23:57:25'),
+(3, 'KRISIS AIR! Sedekah Bangun Sumur di Pelosok Jabar', 'krisis-air-sedekah-bangun-sumur-di-pelosok-jabar', 3, 500000000, '2026-07-11', '<p><span style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; border: 0px solid #e5e7eb; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-weight: bold; color: #3a3a3a; font-family: Rubik, \'Rubik Fallback\', ui-sans-serif, system-ui, sans-serif, \'Apple Color Emoji\', \'Segoe UI Emoji\', \'Segoe UI Symbol\', \'Noto Color Emoji\'; font-size: 16px; background-color: #ffffff;\">Di tengah keindahan alam Jawa Barat, terdapat 15 titik pemukiman yang tengah berjuang melawan dahaga.</span><span style=\"color: #3a3a3a; font-family: Rubik, \'Rubik Fallback\', ui-sans-serif, system-ui, sans-serif, \'Apple Color Emoji\', \'Segoe UI Emoji\', \'Segoe UI Symbol\', \'Noto Color Emoji\'; font-size: 16px; background-color: #ffffff;\">&nbsp;</span></p>\r\n<p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; border: 0px solid #e5e7eb; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 1rem 0px; line-height: 1.5; color: #3a3a3a; font-family: Rubik, \'Rubik Fallback\', ui-sans-serif, system-ui, sans-serif, \'Apple Color Emoji\', \'Segoe UI Emoji\', \'Segoe UI Symbol\', \'Noto Color Emoji\'; font-size: 16px; background-color: #ffffff;\">Warga di pegunungan dan pesisir kesulitan mengakses air bersih akibat mahalnya biaya pengeboran sumur. Bayangkan, untuk sekadar mandi dan memasak, mereka harus rela mengantri berjam-jam dan merogoh kocek hingga Rp20.000 per jerigen!</p>\r\n<p style=\"--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scroll-snap-strictness: proximity; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; border: 0px solid #e5e7eb; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin: 1rem 0px; line-height: 1.5; color: #3a3a3a; font-family: Rubik, \'Rubik Fallback\', ui-sans-serif, system-ui, sans-serif, \'Apple Color Emoji\', \'Segoe UI Emoji\', \'Segoe UI Symbol\', \'Noto Color Emoji\'; font-size: 16px; background-color: #ffffff;\">Kondisi ini semakin memprihatinkan karena air adalah sumber kehidupan. Tanpa air bersih, warga kesulitan menjalankan aktivitas sehari-hari, bahkan untuk mengairi lahan pertanian mereka. Padahal, bertani adalah mata pencaharian utama yang menopang hidup keluarga mereka.</p>', 'FbcPv0rmIiTUREQRJCMEyCllZGTRXBEWcYw0NV4G.png', 1, '2026-06-03 20:44:27', '2026-06-03 20:44:27');
 
 -- --------------------------------------------------------
 
@@ -140,7 +154,8 @@ CREATE TABLE `donaturs` (
 --
 
 INSERT INTO `donaturs` (`id`, `name`, `email`, `email_verified_at`, `password`, `avatar`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Kurnia Andi Nugroho', 'kurnia@gmail.com', NULL, '$2y$12$gon9GzvNQqjJqYKq4wO6c.BJ88GrVZFmSl/KJMAKL4lzmZFonJ.Zm', 'ROgCmAnKRm0Vp2KFKesIYYA8zjvnB30zosLpcipZ.png', NULL, '2026-06-01 22:39:57', '2026-06-02 00:42:26');
+(1, 'Kurnia Andi Nugroho', 'kurnia@gmail.com', NULL, '$2y$12$gon9GzvNQqjJqYKq4wO6c.BJ88GrVZFmSl/KJMAKL4lzmZFonJ.Zm', 'ROgCmAnKRm0Vp2KFKesIYYA8zjvnB30zosLpcipZ.png', NULL, '2026-06-01 22:39:57', '2026-06-02 00:42:26'),
+(2, 'Faisal Mahadi', 'faisal@gmail.com', NULL, '$2y$12$lJPhlZ3r.PG0JNKeCkAdAOdE38KnCkRkry6.iCMbs.RtgRBTjAEDa', 'kpRbwxhwhiZEPTHL9zSN2LVV8YbKLNBsXtp5VZCL.png', NULL, '2026-06-03 17:59:07', '2026-06-03 20:03:56');
 
 -- --------------------------------------------------------
 
@@ -248,8 +263,12 @@ CREATE TABLE `oauth_access_tokens` (
 --
 
 INSERT INTO `oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes`, `revoked`, `created_at`, `updated_at`, `expires_at`) VALUES
+('0055d2e51f728e0855cd30c3d76c7a8c5143702f10b462990f00e267dcda91ac51a39b5c2c0e5c3b', 2, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-03 19:30:37', '2026-06-03 19:30:37', '2027-06-04 02:30:37'),
+('1959f17af4e7787e6465a2061ab5ed940ee5c08b8752654735b759fb60118bc3e0e7f0bcedb40499', 2, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-03 20:03:47', '2026-06-03 20:03:47', '2027-06-04 03:03:47'),
+('33ab3acb42af8de44363b1d5e9951ba66cb3ffdaf7bace065ed381e1eed9203b055fe17e05db0b39', 2, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-03 18:45:40', '2026-06-03 18:45:40', '2027-06-04 01:45:40'),
 ('879792d00d9de4d059935e449b6b0b7e0afb4f97203f7c3b082d3e8deaac0f39b5f00ff9a8a94d3b', 1, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-01 22:39:57', '2026-06-01 22:39:57', '2027-06-02 05:39:57'),
 ('bf10e1fa0a56b3491959a5c2a5b7ccf5b21a4edc1d2c358b6f3cd99d61f84d6e79c4c0186603e2a8', 1, '019e8691-557c-7287-85c0-b0605b9ac677', 'healthCheck', '[]', 0, '2026-06-01 22:38:09', '2026-06-01 22:38:09', '2027-06-02 05:38:09'),
+('ca3930b001ab8023ccd6f77ba462a84b3735165825ca6267f7b3a2c1c9aa2307d85a9ba353234ecf', 2, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-03 17:59:07', '2026-06-03 17:59:07', '2027-06-04 00:59:07'),
 ('e8138e6bba16ded0a1c0686c3416bba0e5c1d326ddd1e3499ccb7a06137c43e9d6cd6ae3a7fb701b', 1, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-01 22:51:49', '2026-06-01 22:51:49', '2027-06-02 05:51:49'),
 ('f0526cfbff400c7932afe8965ec97cf71d62c97d9d11d43673b84995771dcef480aa52b40b0ebd16', 1, '019e8691-557c-7287-85c0-b0605b9ac677', 'authToken', '[]', 0, '2026-06-02 00:32:59', '2026-06-02 00:32:59', '2027-06-02 07:32:59');
 
@@ -360,6 +379,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('60bftQsnJz7wYucBZhvzOEv2RLsPmK0GtBFKIMQX', NULL, '127.0.0.1', 'PostmanRuntime/7.39.1', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiOEpmUFVaNnJHaDNuQzFLUjVLRGxzVGlLUHpPR0hoNWkwYkZRclFMdSI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7czo1OiJyb3V0ZSI7czo1OiJsb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1780384487),
+('k2EVqylHa6uJz0t2NFhjrGrYQsysTLAcVBdKLIyg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiSUhSQ1lReUhPSGV1NnpuUUFtSGM4dkszNjVPZTJTd2huMVRSUmxmUCI7czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9jYW1wYWlnbiI7czo1OiJyb3V0ZSI7czoyMDoiYWRtaW4uY2FtcGFpZ24uaW5kZXgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjU6ImxvZ2luIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1780545166),
 ('V8YAmEVCJ5MRHEQVadDlxWK6s3liq6DlwvVWRMW4', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiQkh4ZXNyRGlWb1hyTVNhT3UxRnhMS1JiMXB5Zkd1amdwVFhudW4zUyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6Mjp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9kb25hdGlvbiI7czo1OiJyb3V0ZSI7czoyMDoiYWRtaW4uZG9uYXRpb24uaW5kZXgiO31zOjU6ImxvZ2luIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1780388916);
 
 -- --------------------------------------------------------
@@ -551,7 +571,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `campaigns`
 --
 ALTER TABLE `campaigns`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -569,7 +589,7 @@ ALTER TABLE `donations`
 -- AUTO_INCREMENT for table `donaturs`
 --
 ALTER TABLE `donaturs`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
